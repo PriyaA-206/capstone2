@@ -1,0 +1,179 @@
+/* ======= General Styles ======= */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ======= Hero Section (Minimized) ======= */
+.hero {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    padding: 100px 20px; /* Reduced padding for a smaller section */
+    height: 70vh; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    background: rgba(41, 85, 190, 0.9);
+    color: white;
+    padding: 20px 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Cloud Images (Bigger) */
+.top-cloud,
+.bottom-cloud {
+    width: 220px; /* Increased size */
+    position: absolute;
+    opacity: 0.85;
+}
+
+.top-cloud {
+    top: 3%;
+    right: 2%;
+}
+
+.bottom-cloud {
+    bottom: 3%;
+    left: 2%;
+}
+
+/* Mountain Image (Smaller) */
+.mountain {
+    width: 70%; /* Reduced size */
+    max-width: 500px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ======= Section Styles ======= */
+section {
+    padding: 50px 20px;
+    background-color: white;
+    margin: 30px auto;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Skills List */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #4a90e2;
+    color: white;
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 6px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* ======= Contact Section ======= */
+.contact .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact .btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ======= Footer Styles ======= */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Further minimized on small screens */
+    }
+
+    .hero-content {
+        padding: 20px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .top-cloud, .bottom-cloud {
+        width: 200px; /* Adjusted for smaller screens */
+    }
+
+    .mountain {
+        width: 80%;
+    }
+
+    section {
+        width: 95%;
+    }
+}
